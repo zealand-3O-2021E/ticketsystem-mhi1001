@@ -17,7 +17,7 @@ namespace ClassLibraryTicketSystem.Tests
         {
             //Arrange & Act
             MC mc1 = new MC("12345678", DateTime.Now);
-
+            
             //Assert
             Assert.Fail();
         }
@@ -31,6 +31,18 @@ namespace ClassLibraryTicketSystem.Tests
             double actualPrice = mc1.Price();
             //Assert
             Assert.AreEqual(125, actualPrice);
+        }
+
+        [TestMethod()]
+        public void PriceBroBizzTest()
+        {
+            //Arrange
+            MC mc1 = new MC("32ha", DateTime.Now);
+            //Act
+            mc1.BrobizzUsed = true;
+            double actualPrice = mc1.Price();
+            //Assert
+            Assert.AreEqual(118.75, actualPrice,0.01);
         }
 
         /// <summary>

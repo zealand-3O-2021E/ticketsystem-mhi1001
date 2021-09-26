@@ -35,6 +35,17 @@ namespace ClassLibraryTicketSystem.Tests
             //Assert
             Assert.AreEqual(240, actualPrice);
         }
+        [TestMethod()]
+        public void PriceBroBizzTest()
+        {
+            //Arrange
+            Car c1 = new Car("32ha", DateTime.Now);
+            //Act
+            c1.BrobizzUsed = true;
+            double actualPrice = c1.Price();
+            //Assert -> 5% of 240 = 12 so 240-12 = 228
+            Assert.AreEqual(228, actualPrice,0.01);
+        }
 
         /// <summary>
         /// Tests if its returning the right type of vehicle

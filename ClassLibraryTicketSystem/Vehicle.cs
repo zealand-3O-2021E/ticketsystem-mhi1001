@@ -23,6 +23,8 @@ namespace ClassLibraryTicketSystem
 
             LicensePlate = licensePlate;
             Date = date;
+            //By default brobizz is not used, if someone uses, the property then can later be set to true
+            BrobizzUsed = false;
         }
 
         protected string LicensePlate
@@ -41,6 +43,8 @@ namespace ClassLibraryTicketSystem
         }
 
         protected DateTime Date { get; set; }
+
+        public bool BrobizzUsed { get; set; }
 
         public abstract double Price();
 
