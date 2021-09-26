@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryTicketSystem
 {
+    /// <summary>
+    /// Base class, it has 3 props, date, licenseplate and also has brobizz. It implements all of these properties on the child classes.
+    /// Also has some abstract methods that need to be implemented in every child class
+    /// </summary>
     public abstract class Vehicle
     {
         /// <summary>

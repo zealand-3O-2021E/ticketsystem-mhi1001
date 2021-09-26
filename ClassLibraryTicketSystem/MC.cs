@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryTicketSystem
 {
+    /// <summary>
+    /// MC class that inherits from Vehicle it has 2 properties. Date and Licenseplate
+    /// </summary>
     public class MC : Vehicle
     {
         /// <summary>

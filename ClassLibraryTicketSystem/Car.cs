@@ -3,7 +3,9 @@
 namespace ClassLibraryTicketSystem
 {
 
-
+    /// <summary>
+    /// Car class that inherits from vehicle. It has 2 properties, date and license plate.
+    /// </summary>
     public class Car : Vehicle
     {
 
