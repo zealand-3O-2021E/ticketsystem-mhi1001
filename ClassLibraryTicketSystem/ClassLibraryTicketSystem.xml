@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibraryTicketSystem</name>
+    </assembly>
+    <members>
+        <member name="M:ClassLibraryTicketSystem.Car.#ctor(System.String,System.DateTime)">
+            <summary>
+            Car Constructor that takes two parameters
+            </summary>
+            <param name="licensePlate">This is the license plate of the object</param>
+            <param name="date">This is the date of creation or registration</param>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.Price">
+            <summary>
+            Method that overrides the base that shows the price.
+            If this instance has used brobizz it will give a discount on the price
+            </summary>
+            <returns>double type that is the price</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.VehicleType">
+            <summary>
+            Method that outputs type of the vehicle
+            </summary>
+            <returns>Returns a string that says the type of the vehicle</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.#ctor(System.String,System.DateTime)">
+            <summary>
+            Car Constructor that takes two parameters
+            </summary>
+            <param name="licensePlate">This is the license plate of the object</param>
+            <param name="date">This is the date of creation or registration</param>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.Price">
+            <summary>
+            Method that overrides the base that shows the price.
+            If this instance has used brobizz it will give a discount on the price
+            </summary>
+            <returns>double type that is the price</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.VehicleType">
+            <summary>
+            Method that outputs type of the vehicle
+            </summary>
+            <returns>Returns a string that says the type of the vehicle</returns>
+        </member>
+        <member name="F:ClassLibraryTicketSystem.Vehicle._licensePlate">
+            <summary>
+            Instance field for the license plate property so we can add logic. Auto-Properties do not support logic.
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Vehicle.#ctor(System.String,System.DateTime)">
+            <summary>
+            Base Class constructor, it takes two parameters.
+            It checks upon creating if the license plate is not longer than 7 chars.
+            If its longer than 7 chars it throws an exception
+            Takes a date for the registration date
+            It also initializes the brobizz discount. the default is false.
+            </summary>
+            <param name="licensePlate">License plate of the vehicle</param>
+            <param name="date">Date of the reg</param>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.Vehicle.LicensePlate">
+            <summary>
+            Licenseplate property that can also not have over 7 chars. Auto Properties do not support logic so we need to add backing field properties.
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Vehicle.Price">
+            <summary>
+            Abstract method, that needs to be implemented on all of the child classes.
+            </summary>
+            <returns>Returns a double the price of the ticket for the specific vehicle</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Vehicle.VehicleType">
+            <summary>
+            Abstract method, that needs to be implemented on all of the child classes.
+            </summary>
+            <returns>Returns a string that says type of vehicle</returns>
+        </member>
+    </members>
+</doc>

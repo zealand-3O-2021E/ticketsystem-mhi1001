@@ -19,6 +19,11 @@ namespace ClassLibraryTicketSystem
             Date = date;
         }
 
+        /// <summary>
+        /// Method that overrides the base that shows the price.
+        /// If this instance has used brobizz it will give a discount on the price
+        /// </summary>
+        /// <returns>double type that is the price</returns>
 
         public override double Price()
         {
@@ -29,7 +34,10 @@ namespace ClassLibraryTicketSystem
 
             return 240;
         }
-
+        /// <summary>
+        /// Method that outputs type of the vehicle
+        /// </summary>
+        /// <returns>Returns a string that says the type of the vehicle</returns>
         public override string VehicleType()
         {
             return "Car";
