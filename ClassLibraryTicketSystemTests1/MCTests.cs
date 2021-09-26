@@ -9,20 +9,17 @@ using System.Threading.Tasks;
 namespace ClassLibraryTicketSystem.Tests
 {
     [TestClass()]
-    public class CarTests
+    public class MCTests
     {
-        /// <summary>
-        /// Tests if the car method returns its designated price which is 240.
-        /// </summary>
         [TestMethod()]
         public void PriceTest()
         {
             //Arrange
-            Car c1 = new Car("32ha", DateTime.Now);
+            MC mc1 = new MC("32ha", DateTime.Now);
             //Act
-            double actualPrice = c1.Price();
+            double actualPrice = mc1.Price();
             //Assert
-            Assert.AreEqual(240,actualPrice);
+            Assert.AreEqual(125, actualPrice);
         }
 
         /// <summary>
@@ -32,11 +29,11 @@ namespace ClassLibraryTicketSystem.Tests
         public void VehicleTypeTest()
         {
             //Arrange
-            Car c1 = new Car("32ha", DateTime.Now);
+            MC mc1 = new MC("32ha", DateTime.Now);
             //Act
-            string actualType = c1.VehicleType();
+            string actualType = mc1.VehicleType();
             //Assert
-            Assert.AreEqual("Car", actualType);
+            Assert.AreEqual("MC", actualType);
         }
     }
 }
