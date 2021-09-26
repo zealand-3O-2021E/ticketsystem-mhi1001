@@ -11,6 +11,17 @@ namespace ClassLibraryTicketSystem.Tests
     [TestClass()]
     public class CarTests
     {
+        [ExpectedException(typeof(ArgumentException))]
+        [TestMethod()]
+        public void CarLicensePlateArgumentException()
+        {
+            //Arrange & Act
+            Car c1 = new Car("12345678", DateTime.Now);
+
+            //Assert
+           Assert.Fail();
+        }
+
         /// <summary>
         /// Tests if the car method returns its designated price which is 240.
         /// </summary>
@@ -22,7 +33,7 @@ namespace ClassLibraryTicketSystem.Tests
             //Act
             double actualPrice = c1.Price();
             //Assert
-            Assert.AreEqual(240,actualPrice);
+            Assert.AreEqual(240, actualPrice);
         }
 
         /// <summary>
@@ -38,5 +49,7 @@ namespace ClassLibraryTicketSystem.Tests
             //Assert
             Assert.AreEqual("Car", actualType);
         }
+
+
     }
 }

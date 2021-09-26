@@ -11,6 +11,17 @@ namespace ClassLibraryTicketSystem.Tests
     [TestClass()]
     public class MCTests
     {
+        [ExpectedException(typeof(ArgumentException))]
+        [TestMethod()]
+        public void McLicensePlateArgumentException()
+        {
+            //Arrange & Act
+            MC mc1 = new MC("12345678", DateTime.Now);
+
+            //Assert
+            Assert.Fail();
+        }
+
         [TestMethod()]
         public void PriceTest()
         {
