@@ -6,25 +6,23 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryTicketSystem
 {
-    public class MC
+    public class MC : Vehicle
     {
 
-        public MC(string licensePlate, DateTime date)
+        public MC(string licensePlate, DateTime date) 
+            :base(licensePlate, date)
         {
             LicensePlate = licensePlate;
             Date = date;
         }
 
-        public string LicensePlate { get; set; }
-        public DateTime Date { get; set; }
 
-
-        public double Price()
+        public override double Price()
         {
             return 125;
         }
 
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "MC";
         }
