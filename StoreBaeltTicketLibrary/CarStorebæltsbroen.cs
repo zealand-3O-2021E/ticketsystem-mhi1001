@@ -12,6 +12,7 @@ namespace StoreBaeltTicketLibrary
         {
             Date = date;
             LicensePlate = licensePlate;
+            BrobizzUsed = false;
         }
         /// <summary>
         /// Returns the price depending if they went through the bridge on a weekday or weekend and if they used brobizz
