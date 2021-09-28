@@ -7,6 +7,7 @@ namespace ClassLibraryTicketSystemTests1
     [TestClass()]
     public class MCTests
     {
+        
         [ExpectedException(typeof(ArgumentException))]
         [TestMethod()]
         public void McLicensePlateArgumentException()
