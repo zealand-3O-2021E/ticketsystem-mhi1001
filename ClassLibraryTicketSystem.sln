@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibrary", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibraryTests", "StoreBaeltTicketLibraryTests\StoreBaeltTicketLibraryTests.csproj", "{2108C770-345A-4940-9AF5-613DE9FD83A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundBron", "OresundBron\OresundBron.csproj", "{DB6DA0EB-3BC5-41FF-8ADE-82C936FECF54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OresundBron", "OresundBron\OresundBron.csproj", "{DB6DA0EB-3BC5-41FF-8ADE-82C936FECF54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundBronTests", "OresundBronTests\OresundBronTests.csproj", "{3A73CA78-1298-4CE4-8805-CAFAC2CE0E0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OresundBronTests", "OresundBronTests\OresundBronTests.csproj", "{3A73CA78-1298-4CE4-8805-CAFAC2CE0E0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

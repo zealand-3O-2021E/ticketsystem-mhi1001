@@ -7,8 +7,8 @@ namespace OresundBron
     {
         public OresundCar(string licensePlate, DateTime date) : base(licensePlate, date)
         {
-            LicensePlate = licensePlate;
-            Date = date;
+            //LicensePlate = licensePlate;
+            //Date = date;
             BrobizzUsed = false;
         }
 
